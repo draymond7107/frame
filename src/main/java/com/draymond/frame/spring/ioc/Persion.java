@@ -1,4 +1,4 @@
-package com.draymond.frame.spring;
+package com.draymond.frame.spring.ioc;
 
 
 import lombok.Data;
@@ -15,11 +15,11 @@ public class Persion {
     private String name;
 
     public Persion(Integer age, String name) {
+        System.out.println("创建bean");
         this.age = age;
         this.name = name;
     }
 
     public Persion() {
-
     }
 }
